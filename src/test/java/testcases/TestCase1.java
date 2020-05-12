@@ -64,6 +64,13 @@ public class TestCase1 {
 			System.out.println("link is :"+str);
 		}
 	}
+	
+	public void verifyGmailText() {
+		
+		WebElement gmailtext=driver.findElement(By.xpath("//a[contains(text(),'Gmail')]"));
+		
+		System.out.println(gmailtext.isDisplayed());
+	}
 
 	@AfterSuite
 	public void closeBrowser() {
